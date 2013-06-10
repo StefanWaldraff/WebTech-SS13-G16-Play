@@ -57,15 +57,87 @@
 		        </div>
 		    </div>
 		    
-		    <!-- Current Position -->
+		    <!-- // Current Position 
 		    <div id="followCurrentPositionContainer">
 		        <div id="followCurrentPosition_button" class="well">
 		            <input type="button" class="btn" value="Eigener Position folgen" id="followCurrentPositionbutton" onclick="javascript: toggleFollowCurrentPosition()" />
 		        </div>
-		    </div>
+		    </div>-->
+		    
+		    
 		    
 		    <!-- Map -->
 		    <div id="appWrapper">
+		    	<nav id="Optionpanel">
+					<table> 
+						<tr>
+							<td colspan="3">
+								<center><img src="../img/custom/roadmap.png" id="map_type"></center>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="../public/images/custom/arrow_left.png" id="arrowLeft" width="10px" height="10px">	
+							</td>
+							<td>
+								<label id="lblMapType">Map</label> 
+							</td>
+							<td>
+								<img src="../public/images/custom/arrow_reight.png" id="arrowReight">
+							</td>
+						</tr>
+					</table>
+					
+					<table>
+						<tr>
+							<td>
+								<div class="customCheckBox">
+							  		<input type="checkbox" id="0" class="layer" name="" style="display:none;"/>
+								  	<label for="0" />
+							  	</div>								  	
+							</td>
+							<td>
+								<label for="0" style="margin-left:-20px;">Temperatur</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="customCheckBox">
+							  		<input type="checkbox" id="1" class="layer" name="" style="display:none;"/>
+								  	<label for="1" />
+							  	</div>								  	
+							</td>
+							<td>
+								<label for="1" style="margin-left:-20px;">Wind</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="customCheckBox">
+							  		<input type="checkbox" checked="true" id="2" class="layer" name="" style="display:none;"/>
+								  	<label for="2" />
+							  	</div>								  	
+							</td>
+							<td>
+								<label for="2" style="margin-left:-20px;">Seezeichen</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="customCheckBox">
+							  		<input type="checkbox" id="weatherClouds" class="layer" name="" style="display:none;"/>
+								  	<label for="weatherClouds" />
+							  	</div>								  	
+							</td>
+							<td>
+								<label for="weatherClouds" style="margin-left:-20px;">Wetter</label>
+							</td>
+						</tr>
+					</table>	
+	                <label>
+	                	<input type="button" class="btn" value="Eigener Position folgen" id="followCurrentPositionbutton" onclick="javascript: toggleFollowCurrentPosition()" />
+	            	</label>
+				</nav>
 		        <div id="map_canvas"></div>
 		    </div>
 		
