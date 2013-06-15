@@ -89,7 +89,17 @@ $(function() {
 	        "vorsegel": $("#vorsegel :selected").text(),
 	        "marker": $("#marker :selected").text(),
 	        "wdate": $('#wdate').val(),
-	        "wtime": $('#wtime').val()         
+	        "wtime": $('#wtime').val(),     
+	        "wcc": null,
+	        "icon": null,
+	        "temp": null,
+	        "airpressure": null,
+	        "windspeed": null,
+	        "winddirection": null,
+	        "rain": null,
+	        "clouds": null,
+	        "wavehight": null,
+	        "wavedirection": null
 	    };
 	
 	    jQuery.post("app_tripinfo_insert.html", json, function(data) { 

@@ -38,7 +38,18 @@ public class Tripinfo extends Controller {
                 + "'" + data.get("vorsegel") + "',"
                 + "'" + data.get("wdate") + "',"
                 + "'" + data.get("wtime") + "',"
-                + "'" + data.get("marker") + "');");
+                + "'" + data.get("marker") + "',"
+                
+                + "'" + data.get("wcc") + "',"
+                + "'" + data.get("icon") + "',"
+                + "'" + data.get("temp") + "',"
+                + "'" + data.get("airpressure") + "',"
+                + "'" + data.get("windspeed") + "',"
+                + "'" + data.get("winddirection") + "',"
+                + "'" + data.get("rain") + "',"
+                + "'" + data.get("clouds") + "',"
+                + "'" + data.get("wavehight") + "',"
+                + "'" + data.get("wavedirection") + "');");
 
          result = query.executeQuery("SHOW TABLE STATUS FROM seapal LIKE 'wegpunkte'");
          if (result.next()) {
