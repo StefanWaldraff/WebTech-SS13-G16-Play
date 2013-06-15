@@ -10,13 +10,7 @@ INSERT INTO seapal.bootinfo (bootname, registernummer, segelzeichen, heimathafen
 /* insert trips */
 INSERT INTO seapal.tripinfo (titel, von, nach, skipper, crew, tstart, tende, tdauer, motor, tank) VALUES ("Langer Trip nach England", "Hamburg", "Dover", "Hr. Hein", "Martin Felix Manuel", DATE("2012-07-02"), DATE("2012-07-02"), 300, 1241, true);
 
-INSERT INTO seapal.wegpunkte (tnr, name, btm, dtm, lat, lng, sog, cog, manoever, vorsegel, wdate, wtime, marker) VALUES (1, "Marker 1", "btm", "dtm", "lat", "lng", "sog", "cog", "manoever", "vorsegel", "Date", "Time", "Marker 2");
-INSERT INTO seapal.wegpunkte (tnr, name, btm, dtm, lat, lng, sog, cog, manoever, vorsegel, wdate, wtime, marker) VALUES (1, "Marker 2", "btm", "dtm", "lat", "lng", "sog", "cog", "manoever", "vorsegel", "Date", "Time", "Marker 3");
-INSERT INTO seapal.wegpunkte (tnr, name, btm, dtm, lat, lng, sog, cog, manoever, vorsegel, wdate, wtime, marker) VALUES (1, "Marker 3", "btm", "dtm", "lat", "lng", "sog", "cog", "manoever", "vorsegel", "Date", "Time", "Marker 4");
-INSERT INTO seapal.wegpunkte (tnr, name, btm, dtm, lat, lng, sog, cog, manoever, vorsegel, wdate, wtime, marker) VALUES (1, "Marker 4", "btm", "dtm", "lat", "lng", "sog", "cog", "manoever", "vorsegel", "Date", "Time", "Marker 5");
-INSERT INTO seapal.wegpunkte (tnr, name, btm, dtm, lat, lng, sog, cog, manoever, vorsegel, wdate, wtime, marker) VALUES (1, "Marker 5", "btm", "dtm", "lat", "lng", "sog", "cog", "manoever", "vorsegel", "Date", "Time", "Marker 6");
-INSERT INTO seapal.wegpunkte (tnr, name, btm, dtm, lat, lng, sog, cog, manoever, vorsegel, wdate, wtime, marker) VALUES (1, "Marker 6", "btm", "dtm", "lat", "lng", "sog", "cog", "manoever", "vorsegel", "Date", "Time", "Marker 7");
-INSERT INTO seapal.wegpunkte (tnr, name, btm, dtm, lat, lng, sog, cog, manoever, vorsegel, wdate, wtime, marker) VALUES (1, "Marker 7", "btm", "dtm", "lat", "lng", "sog", "cog", "manoever", "vorsegel", "Date", "Time", "Marker 8");
-INSERT INTO seapal.wegpunkte (tnr, name, btm, dtm, lat, lng, sog, cog, manoever, vorsegel, wdate, wtime, marker) VALUES (1, "Marker 8", "btm", "dtm", "lat", "lng", "sog", "cog", "manoever", "vorsegel", "Date", "Time", "Marker 9");
-INSERT INTO seapal.wegpunkte (tnr, name, btm, dtm, lat, lng, sog, cog, manoever, vorsegel, wdate, wtime, marker) VALUES (1, "Marker 9", "btm", "dtm", "lat", "lng", "sog", "cog", "manoever", "vorsegel", "Date", "Time", "Marker 10");
-INSERT INTO seapal.wegpunkte (tnr, name, btm, dtm, lat, lng, sog, cog, manoever, vorsegel, wdate, wtime, marker) VALUES (1, "Marker 10", "btm", "dtm", "lat", "lng", "sog", "cog", "manoever", "vorsegel", "Date", "Time", "Ziel");
+INSERT INTO seapal.wegpunkte (tnr, name, btm, dtm, lat, lng, sog, cog, manoever, vorsegel, wdate, wtime, marker, 	
+	wcc,icon, temp, airpressure, windspeed, winddirection, precipation, clouds, wavehight, wavedirection) VALUES 
+	(1, "Marker 11", "btm", "dtm", "43", "-75", "sog", "cog", "manoever", "vorsegel", DATE("2013-06-13"), TIME("22:49"), "Ziel",
+		501, "10d", 285, 999, 2, 276, 4, 82, NULL, NULL);
