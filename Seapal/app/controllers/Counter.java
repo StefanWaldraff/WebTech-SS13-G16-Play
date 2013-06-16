@@ -30,18 +30,18 @@ public class Counter extends Controller {
     		
     		// Get count value from file
 	    	br = new BufferedReader(new FileReader(path));
-	    	int count = br.read();
+	    	String countAsString = br.readLine();
 	    	br.close();
 	    	
 	    	// Write back new count value
 	    	writer = new FileOutputStream(path);
 		    printer = new PrintStream(writer);
-			printer.println(count+1);
+			printer.println(Integer.parseInt(countAsString) + 1);
 			printer.close();
 			writer.close();
 	    		    	
 	    	// Create Json
-	    	respJSON.put("current", count);
+	    	respJSON.put("current", Integer.parseInt(countAsString));
 	    	
 	    	// Send back Json object
 	    	return ok(respJSON);
