@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Comet Chat</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+ 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
+  </head>
+  <body onload="connect()">
+  	
+  	<div id="page-wrap">
+   
+        <h2>Marker setter:</h2>
+        
+        <form id="send-message-form">
+          <table>
+            <tr>
+              <td>Latitude: </td>
+              <td>
+              </td>
+              <td>
+                <input type="textbox" id="box-lat" maxlength = '100' ></input>
+              </td>
+            </tr>
+            <tr>
+              <td>Longitude: </td>
+              <td>
+              </td>
+              <td>
+                <input type="textbox" id="box-lon" maxlength = '100' ></input>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td>
+              </td>
+              <td>
+                <button type="button" id="btnSubmit" onClick="sendData()">Send Position!</button>
+              </td>
+            </tr> 
+            <tr>
+              <td><br>Last Position:</td>
+              <td>
+              </td>
+              <td>
+                <br>
+                <label id="lblLastUpdatedPos"></label>
+              </td>
+            </tr>            
+          </table>
+        </form>
+    
+      </div>
+
+  </body>
+</html>

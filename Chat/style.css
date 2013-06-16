@@ -1,0 +1,37 @@
+*                               
+{ 
+	margin: 0; 
+	padding: 0; 
+}
+
+body                           
+{ 
+	background: #EEEEEE; 
+}
+
+h2   
+{ 
+	margin: 0 0 10px 0; 
+}
+
+#page-wrap                      
+{ 
+	width: 500px;
+	margin: 30px auto; 
+	position: relative;
+}
+
+
+#box-lat, #box-lon                         
+{ 
+	border: 1px solid #AAA; 
+	width: 360px; 
+	padding: 10px; 
+	float: right;
+}
+
+#btnSubmit
+{
+	width: 100px;
+	height: 25px;
+}

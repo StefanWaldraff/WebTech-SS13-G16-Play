@@ -27,6 +27,8 @@ GET     /app_tripinfo_delete.html   controllers.Tripinfo.delete(wnr: Int)
 GET     /app_waypoint.html          controllers.Waypoint.index(wnr: Int)
 POST 	/app_waypoint_update.html	controllers.Waypoint.update()
 POST 	/app_waypoint_default.html	controllers.Waypoint.fillWithDefaults()
+GET 	/chatserver					controllers.Chat.load()
+POST	/chatserver_send			controllers.Chat.send()
 
 
 # Map static resources from the /public folder to the /assets URL path
