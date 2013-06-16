@@ -35,6 +35,21 @@
 					<li class="first"><a href="impressum.html">Impressum</a></li>
 					<li><a href="legal.html">Legal notice</a></li>
 				</ul>
+				</br>
+				<div > 
+					<h4>Hitcounter</h4> 
+					<p id="count"> </p> 
+					<script>
+						$.ajax({
+					        type : 'get',
+					        url : "http://localhost:9000/hitcounter",
+					        dataType : 'json', 
+					        success : function(response){
+					           document.getElementById('count').innerHTML = response.current;
+					        }
+					    });
+					</script>
+				</div>
 			</div>
 		</div>
 		<div class="container" align="center">
